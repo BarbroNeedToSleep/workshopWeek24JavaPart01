@@ -3,6 +3,7 @@ package se.lexicon;
 
 import java.util.Scanner;
 
+
 public class Main {
     public static void main(String[] args) {
 
@@ -31,6 +32,14 @@ public class Main {
 
             int option = scanner.nextInt();
 
+//            try {
+//
+//
+//            }
+//            catch{
+//
+//            }
+
             switch (option) {
                 case 1:
                     System.out.println("What two numbers do you like to add together?");
@@ -39,33 +48,17 @@ public class Main {
                     float b = scanner.nextFloat();
                     System.out.println(a + " + " + b + " = " + MathOperation.addition(a, b));
 
-                    toContinue = true;
-                    break;
+                    System.out.println("Would you like to make another calculation? (y/n?)");
+                    String input01 = scanner.next();
 
-                    /*System.out.println("Would you like to make another calculation? (y/n?)");
-                    String input = scanner.nextLine();
-
-                    //switch (input) {
-                        case "n":
-                           // input.equalsIgnoreCase("n");
-                            toContinue=false;
-                            break;
-                        case "y":
-                          //
-                            toContinue =true;
-                            break;
-                        //case ” ”:
-                            //break;
-                   // }
-                   /*if(input.equalsIgnoreCase("n")) {
-                        break;
-                    } else if (input.equalsIgnoreCase("y")){
+                if(input01.equalsIgnoreCase("n")) {
+                    toContinue = false;
+                       break;
+                    } else if (input01.equalsIgnoreCase("y")){
                         toContinue = true;
                         break;
-                    } else {
-                       System.out.println("Please enter y or n");
-                       break;
-                   }*/
+                    }
+
                 case 2:
                     System.out.println("What two numbers do you like to subtrack from another?");
                     float c = scanner.nextFloat();
@@ -73,8 +66,16 @@ public class Main {
                     float d = scanner.nextFloat();
                     System.out.println(c + " - " + d + " = " + MathOperation.subtraction(c, d));
 
-                    toContinue = true;
-                    break;
+                    System.out.println("Would you like to make another calculation? (y/n?)");
+                    String input02 = scanner.next();
+
+                    if(input02.equalsIgnoreCase("n")) {
+                        toContinue = false;
+                        break;
+                    } else if (input02.equalsIgnoreCase("y")){
+                        toContinue = true;
+                        break;
+                    }
 
                 case 3:
                     System.out.println("What two numbers do you like to multiplay with one another?");
@@ -83,8 +84,16 @@ public class Main {
                     float f = scanner.nextFloat();
                     System.out.println(e + " * " + f + " = " + MathOperation.multiplication(e, f));
 
-                    toContinue = true;
-                    break;
+                    System.out.println("Would you like to make another calculation? (y/n?)");
+                    String input03 = scanner.next();
+
+                    if(input03.equalsIgnoreCase("n")) {
+                        toContinue = false;
+                        break;
+                    } else if (input03.equalsIgnoreCase("y")){
+                        toContinue = true;
+                        break;
+                    }
 
                 case 4:
                     System.out.println("What number do you like to divide with another?");
@@ -93,8 +102,16 @@ public class Main {
                     float h = scanner.nextFloat();
                     System.out.println(g + " / " + h + " = " + MathOperation.div(g, h));
 
-                    toContinue = true;
-                    break;
+                    System.out.println("Would you like to make another calculation? (y/n?)");
+                    String input04 = scanner.next();
+
+                    if(input04.equalsIgnoreCase("n")) {
+                        toContinue = false;
+                        break;
+                    } else if (input04.equalsIgnoreCase("y")){
+                        toContinue = true;
+                        break;
+                    }
 
                 case 5:
                     System.out.println("You have ended the program and ordered a Pizza!");
