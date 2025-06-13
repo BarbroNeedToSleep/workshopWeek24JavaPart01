@@ -1,22 +1,13 @@
 package se.lexicon;
 
-
 import java.util.Scanner;
-
 
 public class Main {
     public static void main(String[] args) {
 
+/// Small calculator for java that can do addition, subtraction, multiplication and division.
+
         Scanner scanner = new Scanner(System.in);
-
-//       Calculater that support
-//         addition
-//         subtraction
-//         multiplication
-//         division
-
-//         user input for said calculation
-//         user want to continue or end the program after calculation
 
         System.out.println("Hello and welcome to the friendly calculator");
         System.out.println("What operation for calculation do you like to use?");
@@ -31,14 +22,6 @@ public class Main {
             System.out.println("5. End Program");
 
             int option = scanner.nextInt();
-
-//            try {
-//
-//
-//            }
-//            catch{
-//
-//            }
 
             switch (option) {
                 case 1:
